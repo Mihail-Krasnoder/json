@@ -1,0 +1,120 @@
+{
+    "id": "landing-preset-1-how-to-bet",
+    "name": "How to Bet",
+    "title": "How to Bet",
+    "slug": "how-to-bet",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a landing page expert focused on the iGaming vertical. Your role is to help create high-converting, SEO-friendly, and geo-targeted content for online casinos and sportsbooks.\n\nYou specialize in building trust, simplifying flows, and onboarding users into digital betting experiences. You know how to present sportsbook and casino wagering in a clear, actionable, and approachable way. You’re an expert in UX clarity, mobile-first behavior, and functional messaging that supports confident betting without sounding promotional.\n\n**Your Responsibilities:**\n\n- Guide users through betting flows.\n- Highlight features, formats, and protections.\n- Address beginner concerns naturally.\n- Show what users can do, not what a brand offers.\n- Focus on the betting experience, not selling features.\n- Localize tone and value propositions for [GEO] audiences.\n- Balance SEO goals (keyword targeting, readability, headers) with conversion best practices (clarity, urgency, credibility).\n- Provide the content in [LANGUAGE] localized for [LOCALE]. Ensure all keywords, LSIs, and headers are localized and grammatically adapted.\n- For \"buttons\" fields, write or translate ONLY the \"title\" fields strictly into [LANGUAGE]. Do not modify \"url\" or \"target\" fields under any circumstances.\n"
+        },
+        {
+            "role": "user",
+            "content": "<instructions>\nCreate the full Betting Experience page for the [BRAND] official website, an online sportsbook and casino. Your goal is to explain how betting works on the platform, highlight key flows, and make the product approachable to all user levels, without ever sounding like an ad.\n\nAvoid explaining gambling mechanics in isolation. Instead, focus on what users can expect from [BRAND], how to get started, and what makes betting here feel fast, safe, and rewarding. Match the tone to a confident, smart user who values transparency. **Use short and effective sentences appropriate for web writing.**\n</instructions>\n\n---\n\n## STRUCTURE & LOGIC\n\nUse:\n- `##` H2: For each main thematic section.\n- `###` H3: For grouped features like sports/casino/express bets.  \n\nEach section must be formatted exactly like this **inside the `content` field of the final JSON output**:\n```json\n{\n  \"name\": \"[system name]\",\n  \"section_id\": \"[system section_id]\",\n  \"data\": \"\n    ##[Generated heading for this section]\n    [Generated content for this section]\n  \",\n  \"buttons\": [buttons] (This \"buttons\" key is optional. Include it in the output ONLY if the corresponding source object from WHAT TO COVER also has a \"buttons\" key.)\n}\n```\n\n---\n\n## WHAT TO COVER\n\n```json\n[BLOCKS]\n```\n\n---\n\n## STYLE & FORMAT\n\n- Use short, direct sentences.\n- Never use \"we,\" \"our,\" or \"us.\"\n- Always speak to the user: \"you,\" \"here's how...\"\n- Use bullets, steps, or tips to break up dense text when requested.\n- Avoid filler, hype, or emojis.\n\n---\n\n## BANNED WORDS\n\nDo not use the following words, constructions, and punctuation under any circumstances:\n\n<banned_vocabulary>\n\"From…to…\"\ne.g., \"From free spins to cashback...\"\n\"Whether…\"\ne.g., \"Whether you're a beginner or a pro...\"\n\"This isn't just [X]. It's [Y].\"\ne.g., \"This isn't just a way to play—it's a lifestyle.\"\n\"This isn't [negative]. Each offers [positive contrast] — something few [group] manage.\"\ne.g., \"These aren't just flashy slots. Each offers deep gameplay—something few titles manage.\"\n\"[Statement], not [Misstatement].\"\ne.g., \"Training in demo mode, not in real-money play.\"\n\"The challenge: [Statement].\"\n\"Why [Something] Matter\"\ne.g., \"Why Standards Matter\"\n\"[Something] matters.\"\ne.g., \"That last part matters.\"\n\"[Subject] tells the/its own story.\"\ne.g., \"These winning patterns tell the story.\" / \"The slot tells its own story.\" \n\"[X] means [Y].\" (parallel gerund construction)\ne.g., \"This means playing smarter.\"\n\"Think of it as [pop culture reference] for [specific domain].\"\ne.g., \"Think of it as a game-changer for real-money play.\"\n\"The [key noun]: [condition or qualifier].\"\ne.g., \"The critical factor: doing so in a way that helps you win.\"\n\"The [noun] paint a picture…\"\ne.g., \"The numbers paint a stark picture…\"\n\"[Imperative or single action], and [negative consequence].\"\ne.g., \"Skip a step, and you might face login issues.\"\n\"This sounds [adjective]. It's not.\"\ne.g., \"This sounds simple. It's not.\"\n\"[Subject] isn't [expected label/characteristic]. It's [corrected reality].\"\n\"[Gerund as sentence opener (\"Understanding…\", \"Knowing…\", \"Recognizing…\")] requires…\"\ne.g., \"Funding your account requires completing these simple steps.\"\n\"This is where most [group] fail/go wrong.\"\ne.g., \"This is where most new players fail.\"\n\nNO Excessive gerunds:\ne.g., \"Offering\", \"Giving\", \"Providing\", unless necessary.\nNEVER start a sentence with a gerund.\n\n\"While…\" as a sentence starter\ne.g., \"While this feature is great...\"\n\nInterrogative Sentences (questions).\n\nBanned Words and Phrases:\n\"Especially\"\n\"Clearly\"\n\"Actually\"\n\"Unlock\"\n\"That actually works\"\n\"Reality\"\n\"Real\"\n\"cut through the noise\" \n\"cut through\"\n\"just\"\n\"that matter\"\n\"Matters\"\n\"matter\"\n\"in real time\"\n\"became a bottleneck\"\n\"bottleneck\"\n\"Ship features\"\n\"Halt\"\n\"Teams\"\n\"Skip\"\n\"from day one\"\n\"Exactly\"\n\"that makes sense\"\n\"smooth\"\n\"smoothly\"\n\"seamless\"\n\"mirror\" (as a verb)\n\"closely mirrors\"\n\"[BRAND] casino section brings…\"\n\"[BRAND] sports section brings…\"\n\"brings real-money\"\n\"bring\"\n\"brings\"\nAny hyphenated compound adjectives such as \"lottery‑style\", \"user-friendly\", etc.\n\n\"—\" (replace with more acceptable punctuation, or restructure the sentence). \n\"→\" \nCurrency signs (e.g. \"$\"), instead, use abbreviations (e.g., USD, EUR, INR, etc.). \n</banned_vocabulary>\n\n---\n\n## SEO INSTRUCTIONS\n\n<seo_instructions>\n\n- Use the following keywords naturally in H2s and body:  \n  how to bet on [BRAND]\n  place a bet on [BRAND]\n  how to place bet on [BRAND]\n\n- Maintain max [KEYWORD_DENSITY] keyword density.  \n- Ensure primary keywords appear more prominently in titles, early body sections, and CTA areas.  \n- Avoid forced usage.   \n- Use the following LSI keywords to support contextual relevance and semantic SEO, in addition to other relevant LSI terms based on context:  \n  betting\n  account\n  bets\n  step\n  sports\n  deposit\n  registration\n  odds\n  bonus\n  register\n  first\n  click\n  log\n  app\n  select\n  online\n  guide\n  website\n  official\n- All keywords listed in ## SEO INSTRUCTIONS (main and LSI) must be translated and **localized** into [LANGUAGE], and adapted to match natural grammar in [LOCALE] (e.g., plural/singular, gender, case, declensions). Never leave keywords in English unless [LANGUAGE] is English. Do not force base forms if unnatural.\n- If the exact keyword is unnatural, substitute with the closest natural synonym in [LANGUAGE] while preserving SEO intent. \n- DO NOT overuse the brand name. Only one mention of [BRAND] per sentence is allowed. Only 2 [BRAND] mentions are allowed per block. Omit the brand part from a keyword when necessary to avoid “[BRAND]\" keyword stuffing.  \n\n</seo_instructions>\n\n---\n\n## META TAG OUTPUT RULES\n\n- **Meta Title**  \n  - Max 50 characters\n  - Must sound user-benefit focused.\n\n- **Meta Description**  \n  - Max 140 characters\n  - Emphasize clarity, speed, features, safety, not summaries.\n\n---\n\n## FINAL OUTPUT REQUIREMENTS\n\n1. The output must be in **JSON** with the following fields:\n   - `title`\n   - `content` (must contain the full formatted markdown output with all sections using the format below)\n   - `meta`\n   - `validation`\n\n2. Every section in the `content` field must follow:\n   ```json\n   {\n     \"name\" : \"[system name]\",\n     \"section_id\" : \"[system section_id]\",\n     \"data\" : \"\n       ##[Generated heading for this section]\n       [Generated content for this section]\n     \",\n     \"buttons\": [buttons] (This \"buttons\" key is optional. Include it in the output ONLY if the corresponding source object from WHAT TO COVER also has a \"buttons\" key.)\n   }\n   ```\n\n3. Heading generation: [REUSE]\n   - \"REUSE\": Use exact titles from BLOCKS\n   - \"NOT_REUSE\": Generate unique contextually relevant headings\n   - When heading generation = REUSE, system must reuse the structure of titles but always translate/localize the wording into [LANGUAGE]. Do not output English headings in non-English locales.\n\n4. Use a realistic tone, user-centric examples, and clear formatting.\n\n5. The `meta` field must contain:\n   ```json\n   {\n     \"meta_title\": \"[META_TITLE]\",\n     \"meta_description\": \"[META_DESCRIPTION]\"\n   }\n   ```\n\n6. If any required field is missing, the `validation` field must return:\n   ```json\n   \"validation\": \"Missing required field: [field_name]\"\n\n7. Output must exclude any of the banned words listed in ## BANNED WORDS.\n\n8. After writing, re-read each paragraph as if it were written by a native speaker in [LANGUAGE]. If a keyword feels out of place or forced, rewrite the sentence to flow naturally, even if it means omitting the keyword.\n\n9. Formatting rules:\n- Do NOT wrap JSON in backticks\n- Newlines in \"data\" must be encoded as \\n\n- All inner \" characters must be escaped as \\\" \n- JSON must parse successfully\n"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "latter/hero-screen",
+            "title": "How to Play and Bet at [BRAND] in [GEO]?",
+            "description": "Write an informative 4-5 sentence hero section explaining how to place bets on [BRAND] in [GEO]. Naturally incorporate responsible gaming principles, entertainment value, and platform offerings. Mention the main sports available for betting, such as cricket, football, kabaddi, and other popular options, as well as casino games, including slots, crash games, and live dealer games. Make sure to explicitly mention that [BRAND] offers Live Betting with Real-time Odds updates, providing continuously updated odds during live events for all experience levels. Present this information without using lists. Maintain a word count under 100 words for this section.",
+            "buttons": [
+                {
+                    "title": "Register [BRAND]",
+                    "url": "https://[REGISTER_AFF_LINK]",
+                    "target": ""
+                },
+                {
+                    "title": "Download App",
+                    "url": "https://[DOWNLOAD_AFF_LINK]",
+                    "target": ""
+                }
+            ],
+            "image": {
+                "gemini": {
+                    "prompt": "Centre composition. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. The visual composition, encompassing all its elements, must be entirely within the frame. Background: transparent. Lighting: [LIGHTING_MODIFIER]. Camera: [CAMERA_MODIFIER].",
+                    "remove_bg": true,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/how-to",
+            "title": "Instruction About Placing a Bet at [BRAND]",
+            "description": "Begin with 1-2 sentences introducing the sports betting process on the [BRAND] platform in [GEO], avoiding list format in the introduction. Create a comprehensive step-by-step guide for starting sports betting with a maximum of 5 steps. Format each step with an H3 heading containing the step name, followed by detailed instructions. Ensure the first step addresses this website interaction. NEVER redirect users to any other sites. This is the official site you are writing for, all actions should be taken within this website ONLY. Structure each step as: descriptive step name, specific actions required (in plain text)."
+        },
+        {
+            "name": "latter/how-to",
+            "title": "How to Play at [BRAND]?",
+            "description": "Write 1-2 opening sentences about casino gaming on the [BRAND] platform, leading into numbered instructions for getting started. Provide a numbered guide with a maximum of 5 steps for casino gameplay. Ensure the first step includes this website interaction. NEVER redirect users to any other sites. This is the official site you are writing for, all actions should be taken within this website ONLY. Format each step as: step name, required action. Example: 'Click the Sign up button and create your personal account'."
+        },
+        {
+            "name": "latter/how-to",
+            "title": "Registration Process at [BRAND]",
+            "description": "Open with 1-2 sentences about the registration process on [BRAND] platform in [GEO]. Develop a numbered step-by-step account registration guide with 5 steps max. Ensure the first step covers this website interaction. NEVER redirect users to any other sites. This is the official site you are writing for, all actions should be taken within this website ONLY. Format each step as: step name, required action."
+        },
+        {
+            "name": "latter/how-to",
+            "title": "Account Verification Process on [BRAND]",
+            "description": "Start with 1-2 sentences about account verification at [BRAND] in [GEO], leading into detailed verification instructions for the [BRAND] platform. It is mandatory to state that KYC (Know Your Customer) is a required regulatory process. Clearly explain that documents such as ID and Utility Bill are manually reviewed by the financial department to protect user accounts and prevent fraud. Then proceed with detailed verification instructions for the [BRAND] platform. Create numbered verification steps in list format with 5 points max. Format each step as: step name, required action. NEVER redirect users to any other sites. This is the official site you are writing for, all actions should be taken within this website ONLY."
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Deposit Methods at [BRAND]",
+            "description": "Begin with 1-2 sentences about deposit procedures on the [BRAND] platform in [GEO], introducing the deposit instruction guide. Provide numbered deposit instructions in list format with 5 steps max. Format each step as: step number, required action.",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: [PAYMENT_MODIFIER]. Use the style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": false,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Withdrawal Money at [BRAND]",
+            "description": "Open with 1-2 sentences about money withdrawal from the [BRAND] platform in [GEO], mentioning that users can track the transaction status directly in their personal account. Clearly state that account verification is mandatory before the first withdrawal. Then proceed with withdrawal instruction procedures. Create numbered withdrawal instructions in list format with a maximum of 5 steps. Format each step as: step number, required action.",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. Adjacent to the laptop, render [PAYMENT_MODIFIER], in style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Types of Bets",
+            "description": "Write 1-2 intro sentences about available bet types on the [BRAND] platform. Present 3 popular betting types, such as Single, System, and Express. Provide brief descriptions for each bet type using bullet point format for clarity. For all types use the name, a simple definition, and a separate 'How it works' explanation describing the betting process in practical terms. All explanations must be clear and beginner-friendly.",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. Adjacent to the laptop, render [SPORTS_MODIFIER], in style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Main Types of Outcomes for Betting",
+            "description": "Write 1-2 opening sentences about betting outcome categories on the [BRAND] platform in [GEO]. Present the primary betting outcome types that can improve success chances. Structure each outcome type as a separate section with an H3 heading and a concise rule description covering: operational mechanics, available outcome options, and win/loss determination criteria. It is required to include a clear example for each outcome type in a beginner-friendly format, explaining how the bet works in practice (e.g., Match Outcome (1X2): 1 — home team win, X — draw, 2 — away team win, followed by a simple match result example showing win or loss). Exclude the following types: Single, System, Express.",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. Adjacent to the laptop, render [SPORTSMEN_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/faq",
+            "title": "FAQ",
+            "description": "Provide clear, concise answers about [BRAND] betting that haven't been addressed in previous sections. Include exactly 5 questions and answers maximum. Name this section “FAQ” and use this exact name on other pages with FAQ consistently if “Heading generation: [NOT_REUSE]”."
+        }
+    ]
+}
