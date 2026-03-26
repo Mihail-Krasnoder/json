@@ -1,0 +1,148 @@
+{
+    "id": "landing-preset-1-slots",
+    "name": "Slots",
+    "title": "Slots",
+    "slug": "slots",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a landing page expert focused on the iGaming vertical. Your role is to help create high-converting, SEO-friendly, and geo-targeted content for online casinos and sportsbooks. You specialize in **slots**: slot categories, mechanics, RTP/volatility explanation, and bonus communication for slot players. You understand local compliance and player expectations in [GEO], and tailor slot copy to mobile-first users, VIPs, and casual players.\n\n**Your Responsibilities:**\n- Turn slot USPs into concise, persuasive copy.\n- Optimize every headline and section for clarity, trust, and action.\n- Structure pages around trust-building, benefits-first messaging, and friction-free UX.\n- Base content on information about [BRAND]; integrate the brand name in headers where relevant.\n- Localize tone and value propositions for [GEO] audiences.\n- Include culturally relevant slot themes, payment options, examples, and popular providers.\n- Balance SEO goals (keyword targeting, readability, headers) with conversion best practices (clarity, urgency, credibility).\n- Provide the content in [LANGUAGE] localized for [LOCALE]. Ensure all keywords, LSIs, and headers are localized and grammatically adapted.\n- For \"buttons\" fields, write or translate ONLY the \"title\" fields strictly into [LANGUAGE]. Do not modify \"url\" or \"target\" fields under any circumstances.\n"
+        },
+        {
+            "role": "user",
+            "content": "<instructions>\nCreate the full **Slots** page for the **[BRAND]** official website, tailored for **[GEO]** players.\n\nThis content will be published on the official [BRAND] website. It must be natural, high-converting, benefit-rich, and formatted for web readers. The copy should be unique, reflect the brand voice, and speak directly to the reader (“you get,” “your spins,” “your bonus”). **Use short and effective sentences appropriate for web writing.** No salesy or exaggerated claims. Show benefits; don’t describe them vaguely. Follow the section order below without deviation.\n</instructions>\n\n---\n\n## STRUCTURE & LOGIC\n\nUse:\n\n- `##` H2: For each main thematic section.\n- `###` H3/H4: For subpoints if necessary (e.g., breakdown of bonuses, games, payment methods)\n\nEach section must be formatted exactly like this **inside the `content` field of the final JSON output**:\n```json\n{\n  \"name\": \"[system name]\",\n  \"section_id\": \"[system section_id]\",\n  \"data\": \"\n    ##[Generated heading for this section]\n    [Generated content for this section]\n  \",\n  \"buttons\": [buttons] (This \"buttons\" key is optional. Include it in the output ONLY if the corresponding source object from WHAT TO COVER also has a \"buttons\" key.)\n}\n```\n\nUse `###` for any relevant sub-sections (e.g., bonus steps, payment types, device differences). All content should be formatted in markdown syntax.\n\n---\n\n## WHAT TO COVER\n\n```json\n[BLOCKS]\n```\n\n---\n\n## STYLE & FORMAT\n\n- Use real numbers, provider names, and examples.\n- Use bullet points, collapsible sections, or tables where required.\n- End each section with a value-focused or clarity-focused sentence.\n- Write in second person (“you get…\", “you can…\"), never using “we\" or “our\".\n\n---\n\n## BANNED WORDS\n\nDo not use the following words, constructions, and punctuation under any circumstances:\n\n<banned_vocabulary>\n\"From…to…\"\ne.g., \"From free spins to cashback...\"\n\"Whether…\"\ne.g., \"Whether you're a beginner or a pro...\"\n\"This isn't just [X]. It's [Y].\"\ne.g., \"This isn't just a way to play—it's a lifestyle.\"\n\"This isn't [negative]. Each offers [positive contrast] — something few [group] manage.\"\ne.g., \"These aren't just flashy slots. Each offers deep gameplay—something few titles manage.\"\n\"[Statement], not [Misstatement].\"\ne.g., \"Training in demo mode, not in real-money play.\"\n\"The challenge: [Statement].\"\n\"Why [Something] Matter\"\ne.g., \"Why Standards Matter\"\n\"[Something] matters.\"\ne.g., \"That last part matters.\"\n\"[Subject] tells the/its own story.\"\ne.g., \"These winning patterns tell the story.\" / \"The slot tells its own story.\" \n\"[X] means [Y].\" (parallel gerund construction)\ne.g., \"This means playing smarter.\"\n\"Think of it as [pop culture reference] for [specific domain].\"\ne.g., \"Think of it as a game-changer for real-money play.\"\n\"The [key noun]: [condition or qualifier].\"\ne.g., \"The critical factor: doing so in a way that helps you win.\"\n\"The [noun] paint a picture…\"\ne.g., \"The numbers paint a stark picture…\"\n\"[Imperative or single action], and [negative consequence].\"\ne.g., \"Skip a step, and you might face login issues.\"\n\"This sounds [adjective]. It's not.\"\ne.g., \"This sounds simple. It's not.\"\n\"[Subject] isn't [expected label/characteristic]. It's [corrected reality].\"\n\"[Gerund as sentence opener (\"Understanding…\", \"Knowing…\", \"Recognizing…\")] requires…\"\ne.g., \"Funding your account requires completing these simple steps.\"\n\"This is where most [group] fail/go wrong.\"\ne.g., \"This is where most new players fail.\"\n\nNO Excessive gerunds:\ne.g., \"Offering\", \"Giving\", \"Providing\", unless necessary.\nNEVER start a sentence with a gerund.\n\n\"While…\" as a sentence starter\ne.g., \"While this feature is great...\"\n\nInterrogative Sentences (questions).\n\nBanned Words and Phrases:\n\"Especially\"\n\"Clearly\"\n\"Actually\"\n\"Unlock\"\n\"That actually works\"\n\"Reality\"\n\"Real\"\n\"cut through the noise\" \n\"cut through\"\n\"just\"\n\"that matter\"\n\"Matters\"\n\"matter\"\n\"in real time\"\n\"became a bottleneck\"\n\"bottleneck\"\n\"Ship features\"\n\"Halt\"\n\"Teams\"\n\"Skip\"\n\"from day one\"\n\"Exactly\"\n\"that makes sense\"\n\"smooth\"\n\"smoothly\"\n\"seamless\"\n\"mirror\" (as a verb)\n\"closely mirrors\"\n\"[BRAND] casino section brings…\"\n\"[BRAND] sports section brings…\"\n\"brings real-money\"\n\"bring\"\n\"brings\"\nAny hyphenated compound adjectives such as \"lottery‑style\", \"user-friendly\", etc.\n\n\"—\" (replace with more acceptable punctuation, or restructure the sentence). \n\"→\" \nCurrency signs (e.g. \"$\"), instead, use abbreviations (e.g., USD, EUR, INR, etc.). \n</banned_vocabulary>\n\n---\n\n## SEO INSTRUCTIONS\n\n<seo_instructions>\n\n- Use the following keywords naturally in H2s and body:  \n  [BRAND] slots\n  [BRAND] slot\n\n- Maintain max [KEYWORD_DENSITY] keyword density.  \n- Ensure primary keywords appear more prominently in titles, early body sections, and CTA areas.  \n- Avoid forced usage.   \n- Use the following LSI keywords to support contextual relevance and semantic SEO, in addition to other relevant LSI terms based on context:  \n  game\n  play\n  machine\n  slot machines\n  spin\n  player\n  demo play\n  provider\n  multiplier\n  lobby\n  information\n  money\n  win  \n- All keywords listed in ## SEO INSTRUCTIONS (main and LSI) must be translated and **localized** into [LANGUAGE], and adapted to match natural grammar in [LOCALE] (e.g., plural/singular, gender, case, declensions). Never leave keywords in English unless [LANGUAGE] is English. Do not force base forms if unnatural.\n- If the exact keyword is unnatural, substitute with the closest natural synonym in [LANGUAGE] while preserving SEO intent. \n- DO NOT overuse the brand name. Only one mention of [BRAND] per sentence is allowed. Only 2 [BRAND] mentions are allowed per block. Omit the brand part from a keyword when necessary to avoid “[BRAND]\" keyword stuffing.  \n\n</seo_instructions>\n\n---\n\n## META TAG OUTPUT RULES\n\n- **Meta Title**\n  - Max 50 characters\n  - Must be catchy, value-driven\n  - Avoid vague fluff\n\n- **Meta Description**\n  - Max 140 characters\n  - Motivate clicks, highlight benefits\n  - No summary phrases\n\n---\n\n## FINAL OUTPUT REQUIREMENTS\n\n1. The output must be in **JSON** with the following fields:\n   - `title`\n   - `content` (must contain the full formatted markdown output with all sections using the format below)\n   - `meta`\n   - `validation`\n\n2. Every section in the `content` field must follow:\n   ```json\n   {\n     \"name\" : \"[system name]\",\n     \"section_id\" : \"[system section_id]\",\n     \"data\" : \"\n       ##[Generated heading for this section]\n       [Generated content for this section]\n     \",\n     \"buttons\": [buttons] (This \"buttons\" key is optional. Include it in the output ONLY if the corresponding source object from WHAT TO COVER also has a \"buttons\" key.)\n   }\n   ```\n\n3. Heading generation: [REUSE]\n   - \"REUSE\": Use exact titles from BLOCKS\n   - \"NOT_REUSE\": Generate unique contextually relevant headings\n   - When heading generation = REUSE, system must reuse the structure of titles but always translate/localize the wording into [LANGUAGE]. Do not output English headings in non-English locales.\n\n4. Use a realistic tone, user-centric examples, and clear formatting.\n\n5. The `meta` field must contain:\n   ```json\n   {\n     \"meta_title\": \"[META_TITLE]\",\n     \"meta_description\": \"[META_DESCRIPTION]\"\n   }\n   ```\n\n6. If any required field is missing, the `validation` field must return:\n   ```json\n   \"validation\": \"Missing required field: [field_name]\"\n\n7. Output must exclude any of the banned words listed in ## BANNED WORDS.\n\n8. After writing, re-read each paragraph as if it were written by a native speaker in [LANGUAGE]. If a keyword feels out of place or forced, rewrite the sentence to flow naturally, even if it means omitting the keyword.\n\n9. Formatting rules:\n- Do NOT wrap JSON in backticks\n- Newlines in \"data\" must be encoded as \\n\n- All inner \" characters must be escaped as \\\" \n- JSON must parse successfully\n"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "latter/hero-screen",
+            "title": "[BRAND] Slots Game",
+            "description": "Generate a HERO section (2–4 sentences, no more than 100 words) for [BRAND] slots in [GEO]. Clearly mention: total number of slots; variety of genres/themes (Adventure, Fruits, Ancient Egypt, Fantasy, etc.); mechanics (multipliers, bonus rounds, jackpots); slots from well-known providers; availability on browser and mobile app; bonuses for slot play including [WELCOME_BONUS]; demo and real money play options if supported. Do not use lists.",
+            "buttons": [
+                {
+                    "title": "Register [BRAND]",
+                    "url": "https://[REGISTER_AFF_LINK]",
+                    "target": ""
+                },
+                {
+                    "title": "Download App",
+                    "url": "https://[DOWNLOAD_AFF_LINK]",
+                    "target": ""
+                }
+            ],
+            "image": {
+                "gemini": {
+                    "prompt": "Centre composition. Visuals: [SLOTS_MODIFIER]. Use the style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame. Background: transparent. Lighting: [LIGHTING_MODIFIER]. Camera: [CAMERA_MODIFIER].",
+                    "remove_bg": true,
+                    "screen_desktop": false,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/games",
+            "title": "TOP Slots Games at [BRAND] in [GEO]",
+            "description": "Generate 2–3 sentences introducing the most popular slots on [BRAND] for [GEO] players. Highlight diversity (classic slots, video slots, innovative slots). Then, output game cards of 8–10 popular slot games in this exact format: Game Name. RTP: XX%. Volatility: High/Medium/Low. Provider: XXX."
+        },
+        {
+            "name": "latter/text-image",
+            "title": "[BRAND] Slots Lobby Review",
+            "description": "Generate 1–2 sentences introducing the summary of slot features at [BRAND]. Then output a two-column table (Feature | Details) including: Number of Games (total slot count); Slot Providers (6–10 providers separated by commas); Slot Types (all types available on [BRAND]); Mechanics (5–7 mechanics such as Megaways, Crash, etc.); Themes (6–9 themes such as Adventure, Asian, Fruits, Fantasy, etc.); Top Slots by RTP (6–10 high-RTP slot titles available on [BRAND]).",
+            "buttons": [
+                {
+                    "title": "Register [BRAND]",
+                    "url": "https://[REGISTER_AFF_LINK]",
+                    "target": ""
+                }
+            ]
+        },
+        {
+            "name": "latter/how-to",
+            "title": "Getting Started with [BRAND] Slots",
+            "description": "Generate 1–2 sentences explaining that it is simple to start playing slots on [BRAND] by following the steps. Then output steps (assume user already registered). Each step must include: Step title; Clear action instructions. **Do not include the step number before the step! Always include the name of the step + a brief description. NEVER redirect users to any other sites. This is the official site you are writing for, all actions should be taken within this website ONLY.**",
+            "buttons": [
+                {
+                    "title": "Start using!",
+                    "url": "https://[REGISTER_AFF_LINK]",
+                    "target": ""
+                }
+            ]
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Welcome Bonus for Slot Players at [BRAND]",
+            "description": "Generate 2–3 sentences explaining that [BRAND] offers bonuses for new and regular players who want to play slots. State that bonuses activate after registration and deposit, and that a promotions section exists. Then describe bonuses for new players: bonus size (% of deposit and maximum amount); minimum deposit; how the bonus is credited (automatic/manual); availability for slot play. Also mention ongoing rewards for existing players: for example, reload bonuses, cashback, loyalty program.",
+            "buttons": [
+                {
+                    "title": "Get a bonus",
+                    "url": "https://[REGISTER_AFF_LINK]",
+                    "target": ""
+                }
+            ],
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. Adjacent to the laptop, render [BONUSES_MODIFIER], in style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Mobile App for Playing Slots at [BRAND]",
+            "description": "Generate 2–3 sentences introducing the [BRAND] official mobile app for slot play. Mention quick access, user-friendly interface, and mobile functionality. Then describe: Installation (how/where to download — official website, App Store, Google Play, APK); Navigation (how to access slots via menu or bottom panel); Gameplay (playing slots directly on mobile, placing bets, tracking winnings). If no app exists, describe the same for PWA.",
+            "buttons": [
+                {
+                    "title": "Download App",
+                    "url": "https://[DOWNLOAD_AFF_LINK]",
+                    "target": ""
+                }
+            ],
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern Android smartphone, [ANGLE_PHONE_MODIFIER]. Screen Content: Insert the provided MOBILE SCREENSHOT precisely onto the smartphone display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": false,
+                    "screen_mobile": true
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Types of Slot Machines to Play in the [BRAND]",
+            "description": "Generate 2–4 sentences introducing the slots section, mentioning total slot count. Then, output a bulleted list of all slot types available on [BRAND]. After that, create game cards for 4–6 slot types. For each game card: 2–3 sentences on appeal and mechanics; list of 6 popular games in that slot type available on [BRAND]."
+        },
+        {
+            "name": "latter/text-image",
+            "title": "[BRAND] Slots Providers",
+            "description": "Generate 3–4 sentences highlighting [BRAND]'s cooperation with multiple providers. Emphasize variety, high quality, and the presence of top developers. Provide the exact number of providers represented. Then output a bulleted list of 7–10 providers in format: Provider Name; Number or range of games (e.g., 200+ games).",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: a modern laptop, [ANGLE_LAPTOP_MODIFIER]. Screen Content: Insert the provided DESKTOP SCREENSHOT precisely onto the computer display, fitted proportionally without distortion, preserving original colors and pixel ratio with no UI redraw. Adjacent to the laptop, render [SLOTS_MODIFIER], in style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": true,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/text-image",
+            "title": "Deposit and Withdrawal Methods",
+            "description": "Generate 1–2 sentences introducing the payment methods available for [BRAND]. List up to 10 [PAYMENT_METHODS] separated by commas (credit cards, e-wallets, cryptocurrencies, etc.).",
+            "image": {
+                "gemini": {
+                    "prompt": "Composition: [COMPOSITION_MODIFIER]. Visuals: [PAYMENT_MODIFIER]. Use the style: [STYLE_MODIFIER]. The visual composition, encompassing all its elements, must be entirely within the frame, in the preferred space defined by the composition layout. Background: key colors for accents [COLOR1] and [COLOR2]; [BACKGROUND_MODIFIER]. Background extends edge-to-edge across entire frame, fills 100% of canvas area behind all foreground elements, single unified background spans entire composition with no divided sections, continuous seamless surface from left edge to right edge, from top edge to bottom edge, all elements AND text exist on same background layer as part of ONE composition. Lighting: [LIGHTING_MODIFIER]. Symbol rendering: Structural elements integral to objects must render with vector-precise accuracy and clean edges. No alphanumeric characters, labels, numbers, letters, or written content on visual elements except structural decorative symbols that are part of the object design itself. Text: render the text \"[TITLE]\". Bold geometric sans, high contrast against the gradient, optical kerning on, clean anti-aliased edges. Size ≈ 6-8% of frame width. Line-height ~1.05. Add an opposite-luminance outline or glow for legibility.",
+                    "remove_bg": false,
+                    "screen_desktop": false,
+                    "screen_mobile": false
+                }
+            }
+        },
+        {
+            "name": "latter/faq",
+            "title": "FAQ",
+            "description": "Generate up to 5 short, clear Q&A pairs covering [BRAND] slots not already explained. Use H3 for each question. Provide actionable answers. Name this section “FAQ” and use this exact name on other pages with FAQ consistently if “Heading generation: [NOT_REUSE]”."
+        }
+    ]
+}
