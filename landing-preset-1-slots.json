@@ -123,7 +123,7 @@
             "title": "Types of Slot Machines to Play in the [BRAND]",
             "description": "Generate 2–4 sentences introducing the slots section, mentioning total slot count. Then, output a bulleted list of all slot types available on [BRAND].",
             "dynamic_sub_section": {
-                "instruction": "Create game cards for 4–6 slot types. For each game card: 2–3 sentences on appeal and mechanics; list of 6 popular games in that slot type available on [BRAND]."
+                "instruction": "Dynamically create game cards for 4–6 slot types. For each game card: 2–3 sentences on appeal and mechanics; list of 6 popular games in that slot type available on [BRAND]."
             }
         },
         {
